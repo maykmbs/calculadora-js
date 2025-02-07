@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #E0E1DD;
+}
+
+.calculator-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    padding: 36px;
+    width: 600px;
+    height: 760px;
+    border-radius: 20px;
+    background-color: #0D1B2A;
+    margin: auto;
+}
+
+#display {
+    width: 550px;
+    height: 129px;
+    border-radius: 20px;
+    color: #1B263B;
+    font-size: 48px;
+    text-align: end;
+    background-color: #D9D9D9;
+    border: none;
+    padding: 0px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 24px;
+    width: 550px;
+}
+
+button {
+    padding: 0px;
+    width: 119.76px;
+    height: 100px;
+    font-size: 48px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: #1B263B;
+    background-color: #D9D9D9;
+    font-family: "Inter", serif;
+}
+
+button:hover {
+    color: #E0E1DD;
+    background-color: #778da9;
+
+}
+
+.equal {
+    width: auto;
+    grid-column: span 2;
+}
